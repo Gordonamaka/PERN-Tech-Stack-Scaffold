@@ -1,0 +1,26 @@
+{
+  "name": "pern-tech-stack-scaffold",
+  "version": "1.0.0",
+  "description": "Simple Node Express Server w/ React client",
+  "main": "index.js",
+  "bin": {
+    "pern-tech-stack-scaffold": "bin/dbReset.js"
+  },
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:reset": "node bin/dbReset.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gordonamaka/PERN-Tech-Stack-Scaffold.git"
+  },
+  "author": "Gordon Amobi Maka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gordonamaka/PERN-Tech-Stack-Scaffold/issues"
+  },
+  "homepage": "https://github.com/Gordonamaka/PERN-Tech-Stack-Scaffold#readme"
+}
